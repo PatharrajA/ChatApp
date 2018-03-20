@@ -1,0 +1,35 @@
+page-splash {
+    .logo {
+        margin: 40% 0% 36% 0%;
+        img {
+            max-width: 100%;
+        }
+    }
+    .btn-section {
+        margin-top: 40px;
+        color: #fff;
+        button {
+            border-radius: 25px;
+            height: 45px;
+        }
+        button.login-btn {
+            background-color: #f31541;
+            margin-bottom: 20px;
+             :hover {
+                background-color: #f31541;
+            }
+        }
+        button.signup-btn {
+            background-color: #0c0239;
+             :hover {
+                background-color: #0c0239;
+            }
+        }
+        p {
+            font-size: 11px;
+        }
+    }
+    .splash-screen {
+        text-align: center;
+    }
+}

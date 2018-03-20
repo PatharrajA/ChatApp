@@ -1,0 +1,42 @@
+page-login {
+    .login-container {
+        text-align: center;
+        img {
+            width: 70px;
+            height: 70px;
+            margin: 10% 0;
+        }
+        form {
+            background: none;
+            padding: 0 !important;
+            margin: 0 0 15% 0;
+            button {
+                color: #fff;
+                background-color: #f31541;
+                margin-top: 40px;
+            }
+            .item-md {
+                background-color: transparent;
+                font-size: 1.4rem;
+                color: #fff;
+            }
+        }
+        a {
+            font-size: 13px;
+            color: #fff;
+            display: block;
+        }
+        p.register {
+            font-size: 15px;
+            margin-top: 10%;
+            font-weight: 500;
+            color: #fff;
+            a {
+                font-size: 15px;
+                color: #f31541;
+                line-height: 40px;
+                font-weight: 600;
+            }
+        }
+    }
+}
