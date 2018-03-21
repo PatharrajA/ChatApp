@@ -1,0 +1,29 @@
+<ion-content padding class="initial-bg login-container">
+    <img src="assets/imgs/logo.png" alt="">
+    <form role="form" (submit)="login(f)" #f=ngForm>
+        <ion-list>
+            <ion-item>
+                <ion-label floating>Username</ion-label>
+                <ion-input type="text" name="username" #username="ngModel" [(ngModel)]="user.username" required></ion-input>
+            </ion-item>
+            <label class="error" [hidden]="username.valid || (username.pristine && ! f.submitted)">Must Enter Username</label>
+        </ion-list>
+        <ion-list>
+            <ion-item>
+                <ion-label floating>Password</ion-label>
+                <ion-input type="password" name="password" #password="ngModel" [(ngModel)]="user.password" minlength="6" required></ion-input>
+            </ion-item>
+            <label class="error" [hidden]="password.valid || (password.pristine && ! f.submitted)">Must Enter Password</label>
+            <label class="error" [hidden]="!password.hasError('minlength')">Password length Minimum 6 Characters</label>
+        </ion-list>
+       
+        <ion-list>
+            <button ion-button block round type="submit">LOGIN</button>
+        </ion-list>
+    </form>
+    <a href="javascript:void(0)">Forgot Password ?</a>
+    <p class="register">Don't Have an Account
+        <br>
+        <a href="javascript:void(0)" (click)="gotoRegister()">Register</a>
+    </p>
+</ion-content>

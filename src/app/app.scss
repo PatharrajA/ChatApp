@@ -32,3 +32,11 @@ form {
     background-position: center;
     background-repeat: no-repeat;
 }
+label.error{
+    color: #f80333;
+    position: absolute;
+    top: 40px;
+    font-size: 12px;
+    font-weight: 600;
+    right: 5px;
+}
